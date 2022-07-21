@@ -1,0 +1,68 @@
+#container{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header{
+  width: 100%;
+  padding: 10px 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header h1{
+  color: white;
+  font-size: max(20px, min(34px, 3vw));
+}
+.header img{
+  width: max(30px, min(50px, 3vw));
+  height: max(30px, min(50px, 3vw));
+  background-color: white;
+  margin: 0 10px 0 5px;
+}
+.table-holder{
+  margin: 20px 0;
+  position: relative;
+  height: max(300px, min(540px, 80vw));
+  width: max(300px, min(540px, 80vw));
+}
+table{
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  outline: 4px solid black;
+}
+table tr td{
+  padding: 0;
+}
+table tr td input{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+table tr td input:focus{
+  outline: none;
+}
+table tr td input::-webkit-outer-spin-button, table tr td input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+table tr td input[type=number] {
+  -moz-appearance: textfield;
+}
+.design{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  pointer-events: none;
+}
+.design div{
+  pointer-events: none;
+  flex-basis: 33.33%;
+  outline: 2px solid black;
+}
